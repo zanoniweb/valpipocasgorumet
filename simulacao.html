@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
+
+    <title>SIMULAÇÃO: VALQUIRIA PIPOCAS GOURMET.</title>
+<style>
+     ul {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: nome;
+        font-family: Geneva;
+        color: black;
+        }
+        a:hover {
+        color: red;
+        }
+        a {
+        font-family: Geneva;
+        font-size: 25px;
+        color: black;
+        text-decoration: nome;
+        }
+        active {
+        color: red;
+        }
+        header img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 5px solid pink;
+        align-content: center;
+        }
+        header {
+        align-items: center;        
+        }
+        div {
+        align-items: center;  
+        }
+        .center {
+        text-align: center;
+        }
+        button {
+        padding: 15px; /* Aumenta o tamanho do botão */
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        color: white; /* Muda a cor do texto para branco */
+        background-color: blue; /* Adiciona cor de fundo ao botão */
+        font-size: 30px; /* Aumenta o tamanho da fonte */
+        text-decoration-color: White;
+        }
+        body {
+        color: black;
+        background-color: white;
+        font-family: Geneva;
+        align-items: center;
+        }
+        p {
+        font-family: Geneva;
+        text-align: justify;
+        font-size: 30px; 
+         }
+        form {
+        font-family: Geneva;
+        text-align: center;
+        font-size: 30px;     
+        }
+        input {
+        font-family: Geneva;
+        text-align: center;
+        font-size: 30px; 
+        }
+        label {
+        font-family: Geneva;
+        text-align: center;
+        font-size: 30px; 
+        }
+        select {
+        font-family: Geneva;
+        text-align: center;
+        font-size: 30px;     
+        }
+        h1 {
+        font-family: Geneva;
+        font-size: 35px;
+        text-align: center;
+        color: black;
+        }
+        footer {
+        font-family: Geneva;
+        text-align: center;
+        font-size: 25px;
+        color: black;
+        }
+        @media print { 
+         #noprint { display:none; } 
+         body { background: #fff; }
+         }
+</style>
+</head>
+<header>
+    <div class="center">
+        <nav>
+    <ul>
+        <a href="index.html">Valquiria Pipocas Gourmet.</a>
+        <a href="catalogodegustativo.html">Catálogo Virtual Degustativo.</a>
+    </ul>
+    </nav>
+  
+        <img src="./img/logo.png"></img>
+
+    </div>
+</header>
+<body>
+ <hr>
+    <center>
+    <div> 
+    <form id="pipocaForm">
+        <form>
+        <b><h1>SIMULAÇÃO: VALQUIRIA PIPOCAS GOURMET.</h1></b></br>
+        <p>CONTATO COMERCIAL (43) 99994-4331 (WATS).</p>
+        
+        <b><p><label for=“name”>Nome do Cliente:</label></b><input type="text" id="nome" nome="Nome do Cliente"/></p>
+        
+        <b><p><label for=“name”>Nome do Homenageado:</label></b><input type="text" id="nome" nome="Nome do Homenageado"/></p>
+        
+        <b><p><label for=“name”>Data da Simulação:</label></b><input id="date" type="date"/></p>
+        <b><p><label for=“name”>Data da Entrega:</label></b><input id="date" type="date"/></p>
+        
+        <b><p><label for=“name”>A Tipologia da Sua Festa:</label></b><input type="text" id="nome" nome="A Tipologia da Sua Festa:"/></p>
+
+        <b><p><label for=“name”>A Idade do Aniversáriante:</label></b><input type="text" id="nome" nome="A Idade do Aniversáriante:"/></p>
+<hr>
+        <label for="pipoca1">Leite em pó 20,0 g (R$ 6,00/unidade):</label>
+        <input type="number" id="pipoca1" name="pipoca1" min="0" step="1" value="0">
+        <span id="subtotal1">Subtotal: R$ 0,00</span><br>
+
+        <label for="pipoca2">Leite em pó 40,0 g (R$ 8,00/unidade):</label>
+        <input type="number" id="pipoca2" name="pipoca2" min="0" step="1" value="0">
+        <span id="subtotal2">Subtotal: R$ 0,00</span><br>
+
+        <label for="pipoca3">Leite em pó 80,0 g (R$ 11,00/unidade):</label>
+        <input type="number" id="pipoca3" name="pipoca3" min="0" step="1" value="0">
+        <span id="subtotal3">Subtotal: R$ 0,00</span><br>
+
+        <label for="pipoca4">Bala de coco 20,0 g (R$ 6,00/unidade):</label>
+        <input type="number" id="pipoca4" name="pipoca4" min="0" step="1" value="0">
+        <span id="subtotal4">Subtotal: R$ 0,00</span><br>
+
+        <label for="pipoca5">Bala de coco 40,0 g (R$ 8,00/unidade):</label>
+        <input type="number" id="pipoca5" name="pipoca5" min="0" step="1" value="0">
+        <span id="subtotal5">Subtotal: R$ 0,00</span><br>
+
+        <label for="pipoca6">Bala de coco 80,0 g (R$ 11,00/unidade):</label>
+        <input type="number" id="pipoca6" name="pipoca6" min="0" step="1" value="0">
+        <span id="subtotal6">Subtotal: R$ 0,00</span><br>
+
+        <label for="pipoca7">Ovomaltine 20,0 g (R$ 7,00/unidade):</label>
+        <input type="number" id="pipoca7" name="pipoca7" min="0" step="1" value="0">
+        <span id="subtotal7">Subtotal: R$ 0,00</span><br>
+
+        <label for="pipoca8">Ovomaltine 40,0 g (R$ 10,00/unidade):</label>
+        <input type="number" id="pipoca8" name="pipoca8" min="0" step="1" value="0">
+        <span id="subtotal8">Subtotal: R$ 0,00</span><br>
+
+        <label for="pipoca9">Ovomaltine 80,0 g (R$ 14,00/unidade):</label>
+        <input type="number" id="pipoca9" name="pipoca9" min="0" step="1" value="0">
+        <span id="subtotal9">Subtotal: R$ 0,00</span><br>
+
+        <label for="pipoca10">Adicionar fita personalizada (R$ 20,00/para cada 20 unidades):</label>
+        <input type="number" id="pipoca10" name="pipoca10" min="0" step="1" value="0">
+        <span id="subtotal10">Subtotal: R$ 0,00</span><br>
+
+        <label for="pipoca11">Adicionar etiqueta 3D (R$ 25,00/para cada 20 unidade):</label>
+        <input type="number" id="pipoca11" name="pipoca11" min="0" step="1" value="0">
+        <span id="subtotal11">Subtotal: R$ 0,00</span><br>
+
+        <label for="pipoca12">Adicionar taxa de entrega região metropolina de Londrina (R$ 20,00/por localidade):</label>
+        <input type="number" id="pipoca12" name="pipoca12" min="0" step="1" value="0">
+        <span id="subtotal12">Subtotal: R$ 0,00</span><br>
+
+
+        <label for="total">Total Geral:</label>
+        <span id="totalGeral">R$ 0,00</span><br>
+
+        <b><p>OBSERVAÇÕES GERAIS:</b></p>
+        <p>Este orçamento tem validade de 5 dias para o pagamento. A produção somente será realizada mediante o envio do comprovante de pagamento</p><br>
+        <p>Dados para o pagamento: Banco Caixa Economica Federal, PIX 43 99994-4331 - Valquiria Aparecida Silvestre Zanoni</p><br>   
+</form id>
+</div>
+        <button type="button" onclick="reset()">Limpar</button>
+        <button type="button" onclick="calcularTotal()">Calcular</button>
+        <button onclick="print()">Imprimir Tela</button>
+        <button id="download">Download PDF</button>
+    
+    <i>    
+    <b><footer>Site desenvolvido por Juliano <img src="https://d1yei2z3i6k35z.cloudfront.net/6946809/65e45ac72773e_zanoni.1.png" alt="Logo de Juliano Zanoni"></footer></b>
+    </i>
+    </center>
+
+</body>
+<script>
+    function calcularTotal() {
+            
+            const pipoca1 = parseFloat(document.getElementById("pipoca1").value) * 6.00;
+            const pipoca2 = parseFloat(document.getElementById("pipoca2").value) * 8.00;
+            const pipoca3 = parseFloat(document.getElementById("pipoca3").value) * 11.00;
+            
+            const pipoca4 = parseFloat(document.getElementById("pipoca4").value) * 6.00;
+            const pipoca5 = parseFloat(document.getElementById("pipoca5").value) * 8.00;
+            const pipoca6 = parseFloat(document.getElementById("pipoca6").value) * 11.00;
+
+            const pipoca7 = parseFloat(document.getElementById("pipoca7").value) * 7.00;
+            const pipoca8 = parseFloat(document.getElementById("pipoca8").value) * 10.00;
+            const pipoca9 = parseFloat(document.getElementById("pipoca9").value) * 14.00;
+
+            const pipoca10 = parseFloat(document.getElementById("pipoca10").value) * 20.00;
+            const pipoca11 = parseFloat(document.getElementById("pipoca11").value) * 25.00;
+            const pipoca12 = parseFloat(document.getElementById("pipoca12").value) * 20.00;
+
+
+            const totalGeral = pipoca1 + pipoca2 + pipoca3 + pipoca4 + pipoca5 + pipoca6 + pipoca7 + pipoca8 + pipoca9 + pipoca10 + pipoca11 + pipoca12;
+
+            document.getElementById("subtotal1").textContent = `Subtotal: R$ ${pipoca1.toFixed(2)}`;
+            document.getElementById("subtotal2").textContent = `Subtotal: R$ ${pipoca2.toFixed(2)}`;
+            document.getElementById("subtotal3").textContent = `Subtotal: R$ ${pipoca3.toFixed(2)}`;
+            document.getElementById("subtotal4").textContent = `Subtotal: R$ ${pipoca4.toFixed(2)}`;
+            document.getElementById("subtotal5").textContent = `Subtotal: R$ ${pipoca5.toFixed(2)}`;
+            document.getElementById("subtotal6").textContent = `Subtotal: R$ ${pipoca6.toFixed(2)}`;
+            document.getElementById("subtotal7").textContent = `Subtotal: R$ ${pipoca7.toFixed(2)}`;
+            document.getElementById("subtotal8").textContent = `Subtotal: R$ ${pipoca8.toFixed(2)}`;
+            document.getElementById("subtotal9").textContent = `Subtotal: R$ ${pipoca9.toFixed(2)}`;
+            document.getElementById("subtotal10").textContent = `Subtotal: R$ ${pipoca10.toFixed(2)}`;
+            document.getElementById("subtotal11").textContent = `Subtotal: R$ ${pipoca11.toFixed(2)}`;
+            document.getElementById("subtotal12").textContent = `Subtotal: R$ ${pipoca12.toFixed(2)}`;
+
+            document.getElementById("totalGeral").textContent = `R$ ${totalGeral.toFixed(2)}`;
+        }
+</script>
+
+<script>
+document.getElementById('download').addEventListener('click', function() {
+    var pipocaForm = document.getElementById('pipocaForm');
+    
+    // Substituir elementos de entrada por divs
+    var inputs = pipocaForm.querySelectorAll('input, textarea, select');
+    inputs.forEach(function(input) {
+        var div = document.createElement('div');
+        div.textContent = input.value;
+        div.className = input.className;
+        div.style.cssText = window.getComputedStyle(input).cssText;
+        input.parentNode.replaceChild(div, input);
+    });
+
+    html2canvas(pipocaForm, {
+        windowWidth: pipocaForm.clientWidth,
+        windowHeight: pipocaForm.clientHeight,
+        x: pipocaForm.offsetLeft,
+        y: pipocaForm.offsetTop,
+        onrendered: function(canvas) {
+            var imgData = canvas.toDataURL('image/png');
+            var doc = new jsPDF('p', 'mm', 'a4');
+            var width = doc.internal.pageSize.getWidth();
+            var height = doc.internal.pageSize.getHeight();
+            doc.addImage(imgData, 'PNG', 0, 0, width, height);
+            doc.save('sample.pdf');
+        }
+    });
+});
+  </script>
+</html>
