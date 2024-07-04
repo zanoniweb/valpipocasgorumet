@@ -136,7 +136,19 @@
         <b><p><label for=“name”>A Tipologia da Sua Festa:</label></b><input type="text" id="nome" nome="A Tipologia da Sua Festa:"/></p>
 
         <b><p><label for=“name”>A Idade do Aniversáriante:</label></b><input type="text" id="nome" nome="A Idade do Aniversáriante:"/></p>
-<hr>
+        
+        <label>Escolha o sabor de sua pipoca:</label>
+        <select>
+        <option value=“Selecione”>Selecione</opiton>
+        <option value=“Leite em pó”>Leite em pó</opiton>
+        <option value=“Bala de coco”>Bala de coco</opiton>
+        <option value=“Matine”>Matine</opiton>
+        <option value=“Trufada”>Trufada</opiton>
+        <option value=“Banoffe”>Banoffe</opiton>
+        <option value=“Nachos agridoce”>Nachos agridoce</opiton>
+        </select>
+
+    <hr>
         <label for="pipoca1">Pipoca embalagem de 10,0 g (R$ 5,00/unidade):</label>
         <input type="number" id="pipoca1" name="pipoca1" min="0" step="1" value="0">
         <span id="subtotal1">Subtotal: R$ 0,00</span><br>
@@ -201,8 +213,8 @@
 </div>
         <button type="button" onclick="reset()">Limpar</button>
         <button type="button" onclick="calcularTotal()">Calcular</button>
-        <button onclick="print()">Imprimir Tela</button>
-        <button id="download">Download PDF</button>
+        <button onclick="print()">Salvar em Celular</button>
+        <button id="download">Salvar em PC</button>
     
     <i>    
     <b><footer>Site desenvolvido por Juliano <img src="https://d1yei2z3i6k35z.cloudfront.net/6946809/65e45ac72773e_zanoni.1.png" alt="Logo de Juliano Zanoni"></footer></b>
